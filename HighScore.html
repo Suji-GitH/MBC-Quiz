@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>HighScore List</title>
+
+  <!-- Added link to the jQuery library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!-- Bootstrap Style Link -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <!-- Google Font Link -->
+  <link href="https://fonts.googleapis.com/css2?family=Manrope&display=swap" rel="stylesheet">
+  <!-- Fav icon -->
+  <link rel="icon" type="image/x-icon" href="./assets/img/QMark.ico"/>
+   <!-- Own CSS  -->
+   <link rel="stylesheet" href="./assets/css/styles.css">
+
+</head>
+
+<body>
+
+  <div class="container">
+
+    <h2>High Scores</h2>
+
+    <!-- Empty Ordered List for high scores to be appended-->
+    <ol id="highScoreList"></ol>
+
+    <!-- Go back to quiz page via link -->
+    <a href="QuizPage.html">
+      <button class="btn btn-info">Try Again!</button>
+    </a>
+
+    <!-- Button to clear high scores -->
+    <button id="clearHS" class="btn btn-info">Clear Score</button>
+
+  </div>
+
+ <!-- javascript link -->
+ <script src="./assets/javascript/userScores.js"></script>
+
+</body>
+
+</html>

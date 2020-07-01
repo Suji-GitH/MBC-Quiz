@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>Quiz Game</title>
+
+  <!-- Added link to the jQuery library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!-- Bootstrap Style Link -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <!-- Google Font Link -->
+  <link href="https://fonts.googleapis.com/css2?family=Manrope&display=swap" rel="stylesheet">
+  <!-- Fav icon -->
+  <link rel="icon" type="image/x-icon" href="./assets/img/QMark.ico" />
+  <!-- Own CSS  -->
+  <link rel="stylesheet" href="./assets/css/styles.css">
+
+</head>
+
+<body>
+
+  <!-- link to high scores page -->
+  <div class="highScores">
+    <a href="HighScore.html">View HighScores</a>
+  </div>
+
+  <!-- Display time left -->
+  <div class="countDown">
+    <div id="timer"><span>Keep an eye out for the time here!</div>
+  </div>
+
+  <div class="container">
+
+    <!-- Quiz instructions and start button -->
+    <div class="main">
+
+      <h1>Coding Quiz Challenge</h1>
+
+      <p>You have 60 seconds to answer 10 questions, every questions you get incorrect will reduce the time by 10 sec!!!
+        <br> Final score is determined by how many seconds you have left on the clock, good luck!!</p>
+
+      <button id="startQuiz" class="btn btn-info">Start Quiz</button>
+
+    </div>
+
+    <!-- hidden div to display quiz -->
+
+    <div id="questions">
+      <h2 id="quizHeading"></h2>
+      <div id="multiChoice" class="choices"></div>
+    </div>
+
+
+    <!-- GameOver Screen -->
+
+    <div id="gameOver" hidden>
+
+      <h1>Game over</h1>
+
+      <p>Your final score is
+        <span id="userScore"></span>.
+      </p>
+
+      <div class="input-group">
+        <input type="text" max="2" id="initials" class="form-control" placeholder="Enter your Initials">
+        <div class="input-group-append">
+          <button class="btn btn-info" type="button" id="submit">Submit</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Correct Alert -->
+    <div class="alert alert-success" role="alert" hidden="true"> Correct!!!</div>
+    <!-- Incorrect Alert -->
+    <div class="alert alert-danger" role="alert" hidden> Incorrect!!!</div>
+
+
+  </div>
+
+  <!-- javaScript for Question and Answers -->
+  <script src="./assets/javascript/QnA.js"></script>
+  <!-- javaScript for Logic -->
+  <script src="./assets/javascript/script.js"></script>
+
+</body>
+
+</html>
